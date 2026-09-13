@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Студия красоты «Сафия» - подология, маникюр и педикюр в Волгограде</title>
+<meta name="description" content="Студия красоты «Сафия» в Кировском районе Волгограда: подология, аппаратный маникюр и педикюр, японский маникюр. Улица 70-летия Победы, 22, офис 1. Ежедневно с 9:00 до 19:00 по записи.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23F2EEE7'/><text x='32' y='46' font-size='38' font-family='Georgia,serif' text-anchor='middle' fill='%236E2B36'>С</text></svg>">
+<style>
+:root{
+  --paper:#F2EEE7; --paper2:#FAF8F4; --ink:#17161A; --ink-soft:#5B5751;
+  --wine:#6E2B36; --wine-lt:#A6666F; --rule:#D9D2C6;
+  --wrap:1300px;
+  --display:'Prata',Georgia,'Times New Roman',serif;
+  --text:'Onest',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--text);background:var(--paper);color:var(--ink);
+     font-size:clamp(15.5px,.38vw + 14.6px,17.5px);line-height:1.68;font-weight:300;
+     -webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(18px,3.4vw,54px)}
+a{color:inherit}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.06;letter-spacing:-.005em}
+.lbl{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--ink-soft)}
+
+/* демо-полоса */
+.demo{background:var(--ink);color:#CFC9C0;text-align:center;font-size:12.5px;padding:11px 20px;
+      line-height:1.5;letter-spacing:.01em}
+.demo b{color:#fff;font-weight:500}
+
+/* шапка */
+header{position:sticky;top:0;z-index:70;background:rgba(242,238,231,.92);backdrop-filter:blur(10px);
+       border-bottom:1px solid var(--rule)}
+header .wrap{display:flex;align-items:center;gap:34px;height:66px}
+.mark{font-family:var(--display);font-size:23px;text-decoration:none;line-height:1;white-space:nowrap}
+.nav{display:flex;gap:26px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+.nav a{text-decoration:none;color:var(--ink-soft);padding:4px 0;border-bottom:1px solid transparent;transition:.2s}
+.nav a:hover{color:var(--ink);border-bottom-color:var(--wine)}
+.hd-r{margin-left:auto;display:flex;align-items:center;gap:22px}
+.hd-tel{text-decoration:none;font-size:15px;font-weight:400;white-space:nowrap}
+@media(max-width:1080px){.nav{display:none}}
+@media(max-width:560px){.hd-tel{display:none}header .wrap{height:58px}}
+
+/* кнопки: прямоугольные, без теней */
+.b{display:inline-block;text-decoration:none;font-family:var(--text);font-size:12.5px;font-weight:500;
+   letter-spacing:.16em;text-transform:uppercase;padding:15px 30px;border:1px solid var(--ink);
+   background:transparent;color:var(--ink);cursor:pointer;transition:.2s;white-space:nowrap}
+.b:hover{background:var(--ink);color:var(--paper)}
+.b-fill{background:var(--wine);border-color:var(--wine);color:#fff}
+.b-fill:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.b-sm{padding:11px 20px;font-size:11.5px}
+
+/* первый экран */
+.hero{padding:clamp(48px,6.5vw,104px) 0 0}
+.hero-top{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;
+          border-bottom:1px solid var(--rule);padding-bottom:clamp(22px,2.4vw,34px)}
+.hero h1{font-size:clamp(58px,13.5vw,182px);line-height:.86;letter-spacing:-.02em}
+.hero-kind{margin-top:16px;font-size:clamp(13px,1.1vw,16px);letter-spacing:.3em;text-transform:uppercase;
+           color:var(--wine);font-weight:500}
+.hero-place{text-align:right;max-width:22em}
+.hero-place p{font-size:15px;color:var(--ink-soft);line-height:1.55}
+.hero-mid{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(24px,4vw,72px);
+          padding:clamp(26px,3vw,46px) 0 clamp(30px,3.4vw,50px)}
+.hero-lead{font-family:var(--display);font-size:clamp(21px,2.05vw,32px);line-height:1.32;letter-spacing:-.01em}
+.hero-lead em{font-style:normal;color:var(--wine)}
+.hero-side p{color:var(--ink-soft);font-size:16px;margin-bottom:20px}
+.hero-act{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule)}
+.facts>div{padding:22px 22px 26px;border-left:1px solid var(--rule)}
+.facts>div:first-child{border-left:0;padding-left:0}
+.facts b{display:block;font-family:var(--display);font-size:clamp(26px,2.4vw,38px);line-height:1;font-weight:400}
+.facts span{display:block;margin-top:9px;font-size:13px;color:var(--ink-soft);line-height:1.45}
+.band{display:grid;grid-template-columns:1.3fr 1fr 1.15fr;gap:2px;margin-top:clamp(24px,3vw,44px)}
+.band img{width:100%;height:clamp(230px,31vw,430px);object-fit:cover}
+@media(max-width:900px){
+  .hero-top{grid-template-columns:1fr}
+  .hero-place{text-align:left;max-width:none}
+  .hero-mid{grid-template-columns:1fr;gap:26px}
+  .facts{grid-template-columns:1fr 1fr}
+  .facts>div{border-left:0;border-top:1px solid var(--rule);padding:18px 0}
+  .facts>div:nth-child(2){border-left:1px solid var(--rule);padding-left:22px}
+  .facts>div:nth-child(4){border-left:1px solid var(--rule);padding-left:22px}
+  .facts>div:nth-child(-n+2){border-top:0}
+  .band{grid-template-columns:1fr 1fr;gap:2px}
+  .band img:last-child{grid-column:1 / -1}
+  .hero-act .b{flex:1;text-align:center}
+}
+
+/* секции */
+section{padding:clamp(56px,7vw,118px) 0}
+.pale{background:var(--paper2)}
+.dark{background:var(--ink);color:#E6E1D9}
+.dark .lbl,.dark .sh p{color:#9C958C}
+.sh{display:grid;grid-template-columns:70px 1fr;gap:clamp(16px,2.4vw,40px);
+    align-items:start;margin-bottom:clamp(30px,3.6vw,58px)}
+.sh .num{font-family:var(--display);font-size:15px;color:var(--wine);padding-top:10px;
+         border-top:1px solid var(--wine)}
+.dark .sh .num{color:var(--wine-lt);border-top-color:var(--wine-lt)}
+.sh h2{font-size:clamp(30px,4.1vw,64px);margin-bottom:14px}
+.sh h2 em{font-style:italic;color:var(--wine)}
+.dark .sh h2 em{color:var(--wine-lt)}
+.sh p{color:var(--ink-soft);max-width:36em;font-size:16px}
+@media(max-width:640px){.sh{grid-template-columns:1fr;gap:12px}.sh .num{display:inline-block;padding-top:8px}}
+
+/* мастер */
+.mas{display:grid;grid-template-columns:1fr .78fr;gap:clamp(26px,4.5vw,80px);align-items:start}
+.mas-txt p{margin-bottom:18px;color:var(--ink-soft)}
+.mas-txt .big{font-family:var(--display);font-size:clamp(22px,2.2vw,34px);line-height:1.3;color:var(--ink);
+              border-left:2px solid var(--wine);padding-left:24px;margin:26px 0}
+.mas-ph img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.mas-ph figcaption{margin-top:12px;font-size:13px;color:var(--ink-soft);letter-spacing:.04em}
+@media(max-width:860px){.mas{grid-template-columns:1fr}.mas-ph{max-width:380px}}
+
+/* подология списком */
+.pod{border-top:1px solid var(--rule)}
+.pod .it{display:grid;grid-template-columns:64px 1fr auto;gap:clamp(14px,2.4vw,40px);align-items:baseline;
+         padding:clamp(20px,2.2vw,32px) 0;border-bottom:1px solid var(--rule)}
+.pod .n{font-family:var(--display);font-size:20px;color:var(--wine)}
+.pod h3{font-size:clamp(21px,2vw,31px);margin-bottom:7px}
+.pod .d{color:var(--ink-soft);font-size:15.5px;max-width:44em}
+.pod .p{font-family:var(--display);font-size:clamp(19px,1.6vw,25px);white-space:nowrap}
+@media(max-width:640px){.pod .it{grid-template-columns:1fr auto;gap:10px}.pod .n{display:none}}
+
+/* прайс меню */
+.tabs{display:flex;gap:0;flex-wrap:wrap;border-bottom:1px solid var(--rule);margin-bottom:clamp(20px,2.4vw,34px)}
+.tab{padding:14px 24px 13px;border:0;background:transparent;cursor:pointer;font-family:var(--text);
+     font-size:12px;letter-spacing:.15em;text-transform:uppercase;font-weight:500;color:var(--ink-soft);
+     border-bottom:2px solid transparent;margin-bottom:-1px;transition:.2s}
+.tab:first-child{padding-left:0}
+.tab:hover{color:var(--ink)}
+.tab.on{color:var(--ink);border-bottom-color:var(--wine)}
+.plist{display:none}
+.plist.on{display:block}
+.ln{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:baseline;padding:13px 0}
+.ln+.ln{border-top:1px solid var(--rule)}
+.ln .nm{font-weight:400}
+.ln .nm small{display:block;color:var(--ink-soft);font-size:14px;font-weight:300;margin-top:2px;letter-spacing:0}
+.ln .dot{border-bottom:1px dotted #C6BEB0;transform:translateY(-5px)}
+.ln .pr{font-family:var(--display);font-size:19px;white-space:nowrap}
+.ln .dur{font-size:13px;color:var(--ink-soft);margin-left:10px;white-space:nowrap}
+.ln.hid{display:none}
+.plist.open .ln.hid{display:grid}
+.more{margin-top:22px;padding:13px 26px;border:1px solid var(--ink);background:transparent;cursor:pointer;
+      font-family:var(--text);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:500}
+.more:hover{background:var(--ink);color:var(--paper)}
+.note{margin-top:26px;color:var(--ink-soft);font-size:14.5px;max-width:52em}
+@media(max-width:640px){.ln .dot{display:none}.ln{grid-template-columns:1fr auto}.ln .dur{display:none}}
+
+/* работы */
+.gal{display:grid;grid-template-columns:repeat(6,1fr);gap:2px}
+.gal a{display:block;overflow:hidden;background:var(--rule)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gal a:hover img{transform:scale(1.04)}
+.gal .s2{grid-column:span 2}
+.gal .s3{grid-column:span 3}
+.gal .t{aspect-ratio:3/4}
+.gal .w{aspect-ratio:4/3}
+@media(max-width:900px){.gal{grid-template-columns:repeat(4,1fr)}.gal .s3{grid-column:span 2}}
+@media(max-width:560px){.gal{grid-template-columns:repeat(2,1fr)}.gal .s2,.gal .s3{grid-column:span 1}.gal .w{aspect-ratio:3/4}}
+
+/* как устроено */
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(22px,3vw,54px)}
+.how h3{font-size:clamp(20px,1.8vw,27px);margin-bottom:12px;padding-top:16px;border-top:1px solid rgba(255,255,255,.2)}
+.how p{color:#A69E94;font-size:15.5px}
+.how-ph{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:clamp(28px,3.4vw,56px)}
+.how-ph figure{position:relative}
+.how-ph img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.how-ph figcaption{position:absolute;left:0;bottom:0;right:0;padding:30px 20px 16px;font-size:13.5px;color:#fff;
+  background:linear-gradient(0deg,rgba(0,0,0,.72),rgba(0,0,0,0))}
+@media(max-width:860px){.how{grid-template-columns:1fr;gap:0}.how h3{margin-top:22px}.how-ph{grid-template-columns:1fr}}
+
+/* отзывы */
+.rvs{display:grid;grid-template-columns:repeat(3,1fr);gap:2px 0;border-top:1px solid var(--rule)}
+.rvs .q{padding:clamp(24px,2.6vw,40px) clamp(20px,2.2vw,34px) clamp(26px,2.8vw,42px);
+        border-bottom:1px solid var(--rule);border-left:1px solid var(--rule);display:flex;flex-direction:column}
+.rvs .q:nth-child(3n+1){border-left:0;padding-left:0}
+.rvs .st{color:var(--wine);font-size:13px;letter-spacing:3px;margin-bottom:14px}
+.rvs blockquote{font-family:var(--display);font-size:clamp(16.5px,1.25vw,19.5px);line-height:1.44;flex:1}
+.rvs .who{margin-top:20px;font-size:14.5px;font-weight:500}
+.rvs .src{font-size:13px;color:var(--ink-soft);margin-top:3px}
+@media(max-width:960px){.rvs{grid-template-columns:1fr 1fr}.rvs .q:nth-child(3n+1){border-left:1px solid var(--rule);padding-left:clamp(20px,2.2vw,34px)}.rvs .q:nth-child(2n+1){border-left:0;padding-left:0}}
+@media(max-width:620px){.rvs{grid-template-columns:1fr}.rvs .q{border-left:0;padding-left:0}}
+
+/* контакты */
+.cont{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(26px,4vw,70px);align-items:start}
+.ci{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:17px 0;border-bottom:1px solid var(--rule)}
+.ci:first-of-type{border-top:1px solid var(--rule)}
+.ci .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);padding-top:5px}
+.ci .v{font-size:17px}
+.ci .v small{display:block;color:var(--ink-soft);font-size:14.5px;margin-top:4px}
+.ci a{text-decoration:none;border-bottom:1px solid var(--wine-lt)}
+.cont-act{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.map{min-height:460px;border:1px solid var(--rule)}
+.map iframe{width:100%;height:100%;min-height:460px;border:0;filter:grayscale(.35)}
+@media(max-width:900px){.cont{grid-template-columns:1fr}.map{min-height:340px}.map iframe{min-height:340px}.cont-act .b{flex:1;text-align:center}}
+@media(max-width:460px){.ci{grid-template-columns:1fr;gap:4px}}
+
+/* подвал */
+footer{background:var(--ink);color:#8E877E;padding:clamp(44px,5vw,76px) 0 38px;font-size:14.5px}
+.f-t{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;
+     padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.14)}
+.f-m{font-family:var(--display);font-size:30px;color:#F2EEE7}
+.f-l{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+footer a{color:#D5CFC6;text-decoration:none}
+footer a:hover{color:#fff}
+.f-b{margin-top:22px;font-size:12.5px;color:#6E6862}
+
+/* появление */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<div class="demo">Демонстрационный вариант сайта студии «Сафия». Услуги, цены и отзывы взяты из вашей страницы ВКонтакте, карточки 2ГИС и Дикиди. <b>Фото, тексты и цены меняются под вас.</b></div>
+
+<header>
+  <div class="wrap">
+    <a class="mark" href="#top">Сафия</a>
+    <nav class="nav">
+      <a href="#master">Мастер</a>
+      <a href="#podologia">Подология</a>
+      <a href="#ceny">Цены</a>
+      <a href="#raboty">Работы</a>
+      <a href="#otzyvy">Отзывы</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <div class="hd-r">
+      <a class="hd-tel" href="tel:+79692896141">+7 969 289-61-41</a>
+      <a class="b b-fill b-sm" href="https://dikidi.net/1940967" target="_blank" rel="noopener">Записаться</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div>
+        <h1>Сафия</h1>
+        <div class="hero-kind">Студия красоты</div>
+      </div>
+      <div class="hero-place">
+        <div class="lbl">Волгоград</div>
+        <p>Улица 70-летия Победы, 22, офис 1<br>Жилой комплекс «Колизей», Кировский район</p>
+      </div>
+    </div>
+
+    <div class="hero-mid">
+      <p class="hero-lead">Ногтевой сервис и <em>подология</em> у мастера Татев. Вросшие ногти, грибок, мозоли, аппаратный и японский маникюр.</p>
+      <div class="hero-side">
+        <p>Приём только по предварительной записи, ежедневно с 9:00 до 19:00. Один клиент в кабинете, без очереди.</p>
+        <div class="hero-act">
+          <a class="b b-fill" href="https://dikidi.net/1940967" target="_blank" rel="noopener">Записаться онлайн</a>
+          <a class="b" href="tel:+79692896141">Позвонить</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="facts">
+      <div><b>5,0</b><span>рейтинг в 2ГИС и в системе онлайн-записи</span></div>
+      <div><b>22</b><span>услуги доступны к записи</span></div>
+      <div><b>7</b><span>дней в неделю, с 9:00 до 19:00</span></div>
+      <div><b>800 м</b><span>от аквапарка «Акватория»</span></div>
+    </div>
+
+    <div class="band">
+      <img src="zal.jpg" alt="Зал студии красоты «Сафия»">
+      <img src="kabinet.jpg" loading="lazy" alt="Кабинет мастера в студии «Сафия»">
+      <img src="vhod.jpg" loading="lazy" alt="Вход в студию «Сафия» на улице 70-летия Победы, 22">
+    </div>
+  </div>
+</section>
+
+<section id="master">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="num">01</span>
+      <div>
+        <h2>Мастер <em>Татев</em></h2>
+        <p>Подолог, мастер маникюра и педикюра. Ведёт в студии весь ногтевой сервис и медицинскую часть.</p>
+      </div>
+    </div>
+    <div class="mas">
+      <div class="mas-txt rv">
+        <p>Вросшие ногти, грибок, стержневые и фиброзные мозоли, протезирование ногтевой пластины - и обычный маникюр с педикюром, от аппаратного до японского.</p>
+        <div class="big">«Делаю качественно, быстро, безопасно»</div>
+        <p>Гарантия на покрытие: если в течение носки ноготь сломался, переделать можно бесплатно. Все инструменты проходят дезинфекцию и стерилизацию по нормам СанПиН, расходные материалы одноразовые.</p>
+        <p>За полтора года работы в системе онлайн-записи - оценка 5,0. Столько же в 2ГИС.</p>
+        <div class="hero-act" style="margin-top:28px">
+          <a class="b b-fill" href="https://dikidi.net/1940967" target="_blank" rel="noopener">Выбрать время</a>
+          <a class="b" href="#ceny">Посмотреть цены</a>
+        </div>
+      </div>
+      <figure class="mas-ph rv">
+        <img src="master.jpg" loading="lazy" alt="Татев, мастер студии «Сафия»">
+        <figcaption>Татев &middot; подолог, мастер маникюра и педикюра</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="pale" id="podologia">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="num">02</span>
+      <div>
+        <h2>Когда педикюра <em>уже мало</em></h2>
+        <p>Отдельное направление студии: работа со стопой и ногтевой пластиной там, где обычный мастер отправляет к врачу.</p>
+      </div>
+    </div>
+    <div class="pod rv">
+      <div class="it"><div class="n">01</div>
+        <div><h3>Вросший ноготь</h3><div class="d">Обработка вросшего ногтя, снятие боли при ходьбе.</div></div>
+        <div class="p">1 500 &#8381;</div></div>
+      <div class="it"><div class="n">02</div>
+        <div><h3>Грибок ногтей</h3><div class="d">Обработка поражённых ногтей, при необходимости - забор анализа за 300 &#8381;.</div></div>
+        <div class="p">2 000 &#8381;</div></div>
+      <div class="it"><div class="n">03</div>
+        <div><h3>Мозоли и онихолизис</h3><div class="d">Стержневая и фиброзная мозоль - 500 &#8381;, зачистка онихолизиса - 1 500 &#8381;.</div></div>
+        <div class="p">от 500 &#8381;</div></div>
+      <div class="it"><div class="n">04</div>
+        <div><h3>Протезирование и бородавки</h3><div class="d">Восстановление формы ногтя - 1 000 &#8381;, удаление бородавки - от 500 &#8381;, перевязка - 500 &#8381;.</div></div>
+        <div class="p">от 500 &#8381;</div></div>
+    </div>
+    <p class="note rv">Точную тактику мастер определяет на приёме, после осмотра.</p>
+  </div>
+</section>
+
+<section id="ceny">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="num">03</span>
+      <div>
+        <h2>Прайс <em>студии</em></h2>
+        <p>Ногти и подология - у Татев. Стрижки, барбер, перманентный макияж и шугаринг - у других мастеров студии.</p>
+      </div>
+    </div>
+
+    <div class="tabs rv">
+      <button class="tab on" type="button" data-t="p-man">Маникюр</button>
+      <button class="tab" type="button" data-t="p-ped">Педикюр</button>
+      <button class="tab" type="button" data-t="p-pod">Подология</button>
+      <button class="tab" type="button" data-t="p-dr">Другие мастера</button>
+    </div>
+
+    <div class="plist on rv" id="p-man">
+      <div class="ln"><div class="nm">Гигиенический маникюр аппаратный<span class="dur">45 мин</span></div><div class="dot"></div><div class="pr">800 &#8381;</div></div>
+      <div class="ln"><div class="nm">Гигиенический маникюр с покрытием<span class="dur">2 ч</span></div><div class="dot"></div><div class="pr">1 800 &#8381;</div></div>
+      <div class="ln"><div class="nm">Японский маникюр<span class="dur">1 ч</span></div><div class="dot"></div><div class="pr">от 1 300 &#8381;</div></div>
+      <div class="ln"><div class="nm">Укрепление полигелем<span class="dur">30 мин</span></div><div class="dot"></div><div class="pr">200 &#8381;</div></div>
+      <div class="ln"><div class="nm">Дизайн<span class="dur">30 мин</span></div><div class="dot"></div><div class="pr">200 &#8381;</div></div>
+      <div class="ln"><div class="nm">Снятие гель-лака<span class="dur">30 мин</span></div><div class="dot"></div><div class="pr">200 &#8381;</div></div>
+    </div>
+
+    <div class="plist rv" id="p-ped">
+      <div class="ln"><div class="nm">Гигиенический педикюр, пальчики<span class="dur">55 мин</span></div><div class="dot"></div><div class="pr">1 500 &#8381;</div></div>
+      <div class="ln"><div class="nm">Гигиенический педикюр, полный<span class="dur">1 ч 15 мин</span></div><div class="dot"></div><div class="pr">2 000 &#8381;</div></div>
+      <div class="ln"><div class="nm">Гигиенический педикюр аппаратный<span class="dur">1 ч 30 мин</span></div><div class="dot"></div><div class="pr">от 1 500 &#8381;</div></div>
+      <div class="ln"><div class="nm">Гигиенический педикюр с лаком<span class="dur">1 ч</span></div><div class="dot"></div><div class="pr">1 300 &#8381;</div></div>
+      <div class="ln"><div class="nm">Гигиенический педикюр полный, с лаком<span class="dur">1 ч</span></div><div class="dot"></div><div class="pr">1 800 &#8381;</div></div>
+      <div class="ln"><div class="nm">Гигиенический педикюр подологический<span class="dur">1 ч</span></div><div class="dot"></div><div class="pr">2 000 &#8381;</div></div>
+      <div class="ln"><div class="nm">Фруктовый педикюр полный<span class="dur">1 ч</span></div><div class="dot"></div><div class="pr">2 000 &#8381;</div></div>
+      <div class="ln"><div class="nm">Фруктовый педикюр с покрытием<span class="dur">1 ч</span></div><div class="dot"></div><div class="pr">2 500 &#8381;</div></div>
+    </div>
+
+    <div class="plist rv" id="p-pod">
+      <div class="ln"><div class="nm">Обработка вросшего ногтя<span class="dur">30 мин</span></div><div class="dot"></div><div class="pr">1 500 &#8381;</div></div>
+      <div class="ln"><div class="nm">Зачистка онихолизиса<span class="dur">30 мин</span></div><div class="dot"></div><div class="pr">1 500 &#8381;</div></div>
+      <div class="ln"><div class="nm">Обработка ногтей, поражённых грибком<span class="dur">1 ч</span></div><div class="dot"></div><div class="pr">2 000 &#8381;</div></div>
+      <div class="ln"><div class="nm">Стержневая или фиброзная мозоль<span class="dur">30 мин</span></div><div class="dot"></div><div class="pr">500 &#8381;</div></div>
+      <div class="ln"><div class="nm">Протезирование ногтей<span class="dur">1 ч</span></div><div class="dot"></div><div class="pr">1 000 &#8381;</div></div>
+      <div class="ln"><div class="nm">Удаление бородавки<span class="dur">30 мин</span></div><div class="dot"></div><div class="pr">от 500 &#8381;</div></div>
+      <div class="ln"><div class="nm">Перевязка<span class="dur">20 мин</span></div><div class="dot"></div><div class="pr">500 &#8381;</div></div>
+      <div class="ln"><div class="nm">Забор анализа<span class="dur">30 мин</span></div><div class="dot"></div><div class="pr">300 &#8381;</div></div>
+    </div>
+
+    <div class="plist rv" id="p-dr">
+      <div class="ln"><div class="nm">Барбер<small>Мужская стрижка 1 200 &#8381;, детская с 9 лет 900 &#8381;</small></div><div class="dot"></div><div class="pr">900-1 200 &#8381;</div></div>
+      <div class="ln"><div class="nm">Женская стрижка<small>Стрижка горячими ножницами. Кончики 400 &#8381;, чёлка 350 &#8381;</small></div><div class="dot"></div><div class="pr">от 600 &#8381;</div></div>
+      <div class="ln"><div class="nm">Перманентный макияж, брови</div><div class="dot"></div><div class="pr">7 000 &#8381;</div></div>
+      <div class="ln"><div class="nm">Перманентный макияж, губы</div><div class="dot"></div><div class="pr">7 500 &#8381;</div></div>
+      <div class="ln"><div class="nm">Перманентный макияж, стрелки</div><div class="dot"></div><div class="pr">7 000 &#8381;</div></div>
+      <div class="ln"><div class="nm">Межресничная зона</div><div class="dot"></div><div class="pr">4 000 &#8381;</div></div>
+      <div class="ln"><div class="nm">Растушёвка</div><div class="dot"></div><div class="pr">1 000 &#8381;</div></div>
+      <div class="ln"><div class="nm">Шугаринг</div><div class="dot"></div><div class="pr">300-1 200 &#8381;</div></div>
+    </div>
+
+    <p class="note rv">Цены на ногтевой сервис и подологию - из системы онлайн-записи, остальные - из прайса студии ВКонтакте. Оплата наличными или переводом по карте.</p>
+  </div>
+</section>
+
+<section class="pale" id="raboty">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="num">04</span>
+      <div>
+        <h2>Что получается <em>на выходе</em></h2>
+        <p>Снимки из портфолио мастера в системе онлайн-записи.</p>
+      </div>
+    </div>
+    <div class="gal rv">
+      <a class="s3" href="w1.jpg" target="_blank" rel="noopener"><img class="w" src="w1.jpg" loading="lazy" alt="Педикюр в студии «Сафия»"></a>
+      <a class="s3" href="w2.jpg" target="_blank" rel="noopener"><img class="w" src="w2.jpg" loading="lazy" alt="Маникюр с цветным покрытием"></a>
+      <a class="s2" href="w3.jpg" target="_blank" rel="noopener"><img class="t" src="w3.jpg" loading="lazy" alt="Мятное покрытие, студия «Сафия»"></a>
+      <a class="s2" href="w4.jpg" target="_blank" rel="noopener"><img class="t" src="w4.jpg" loading="lazy" alt="Нюдовый маникюр, студия «Сафия»"></a>
+      <a class="s2" href="w5.jpg" target="_blank" rel="noopener"><img class="t" src="w5.jpg" loading="lazy" alt="Красное покрытие, студия «Сафия»"></a>
+      <a class="s2" href="w6.jpg" target="_blank" rel="noopener"><img class="w" src="w6.jpg" loading="lazy" alt="Маникюр, студия «Сафия»"></a>
+      <a class="s2" href="w7.jpg" target="_blank" rel="noopener"><img class="w" src="w7.jpg" loading="lazy" alt="Маникюр, студия «Сафия»"></a>
+      <a class="s2" href="w8.jpg" target="_blank" rel="noopener"><img class="w" src="w8.jpg" loading="lazy" alt="Молочное покрытие, студия «Сафия»"></a>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="kak">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="num">05</span>
+      <div>
+        <h2>Спокойно <em>и стерильно</em></h2>
+        <p>Три вещи, из-за которых к мастеру возвращаются.</p>
+      </div>
+    </div>
+    <div class="how rv">
+      <div><h3>Стерилизация</h3><p>Инструменты проходят дезинфекцию и стерилизацию по нормам СанПиН, в студии стоит автоклав. Пилки, файлы и салфетки одноразовые.</p></div>
+      <div><h3>Гарантия покрытия</h3><p>Если в течение носки ноготь сломался, переделать можно бесплатно.</p></div>
+      <div><h3>Только по записи</h3><p>Один клиент в кабинете, без очереди и спешки. Для гостей есть Wi-Fi, оплата наличными или переводом.</p></div>
+    </div>
+    <div class="how-ph rv">
+      <figure><img src="avtoklav.jpg" loading="lazy" alt="Автоклав для стерилизации инструментов"><figcaption>Автоклав для стерилизации инструмента</figcaption></figure>
+      <figure><img src="kabinet.jpg" loading="lazy" alt="Рабочее место мастера"><figcaption>Кабинет мастера</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="otzyvy">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="num">06</span>
+      <div>
+        <h2>Что пишут <em>клиенты</em></h2>
+        <p>5,0 в 2ГИС и 5,0 в системе онлайн-записи. Отзывы приведены без правок.</p>
+      </div>
+    </div>
+    <div class="rvs rv">
+      <div class="q"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Приходила на педикюр с покрытием. Всё отлично сделали, мастер вежливая, точно знает своё дело и разбирается в подологии. Рекомендую и буду обращаться ещё.</blockquote>
+        <div class="who">Ирина</div><div class="src">2ГИС &middot; 1 июля 2026</div></div>
+      <div class="q"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Очень заботливая и профессионал своего дела специалист. Не ушла без подарков. Очень располагающая атмосфера в салоне.</blockquote>
+        <div class="who">Лейсан Фёдорова</div><div class="src">2ГИС &middot; 19 июня 2026</div></div>
+      <div class="q"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Мне всё понравилось. Мастер аккуратно сделала маникюр и педикюр. Ещё было вкусное кофе и приятная музыка.</blockquote>
+        <div class="who">Софик Погосян</div><div class="src">2ГИС &middot; 23 июня 2026</div></div>
+      <div class="q"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Отличный мастер. Всё было выполнено аккуратно, с большим вниманием. Результатом довольна!</blockquote>
+        <div class="who">Валентина</div><div class="src">Онлайн-запись &middot; маникюр с покрытием, 11 августа 2026</div></div>
+      <div class="q"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Как всегда, очень внимательная и доброжелательная мастер маникюра и педикюра Татев. Сегодня получила огромное удовольствие от процедуры.</blockquote>
+        <div class="who">Анна</div><div class="src">Онлайн-запись &middot; педикюр, 3 июня 2026</div></div>
+      <div class="q"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>Мастер максимально приятная девушка, работу выполнила качественно. Дала дальнейшие рекомендации. Буду приходить ещё.</blockquote>
+        <div class="who">Елизавета</div><div class="src">Онлайн-запись &middot; педикюр, 22 мая 2026</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="pale" id="kontakty">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="num">07</span>
+      <div>
+        <h2>Как нас <em>найти</em></h2>
+        <p>Кировский район, жилой комплекс «Колизей», вход со стороны улицы.</p>
+      </div>
+    </div>
+    <div class="cont">
+      <div class="rv">
+        <div class="ci"><div class="k">Адрес</div><div class="v">Улица 70-летия Победы, 22, офис 1<small>ЖК «Колизей», Кировский район. Рядом аквапарк «Акватория», 800 метров.</small></div></div>
+        <div class="ci"><div class="k">Время</div><div class="v">Ежедневно 9:00-19:00<small>Приём только по предварительной записи</small></div></div>
+        <div class="ci"><div class="k">Телефон</div><div class="v"><a href="tel:+79692896141">+7 969 289-61-41</a><small>Звонок или WhatsApp</small></div></div>
+        <div class="ci"><div class="k">Соцсети</div><div class="v"><a href="https://vk.com/club237569251" target="_blank" rel="noopener">ВКонтакте</a><small>Фото работ и прайс студии</small></div></div>
+        <div class="ci"><div class="k">Оплата</div><div class="v">Наличные, перевод по карте<small>Для гостей есть Wi-Fi</small></div></div>
+        <div class="cont-act">
+          <a class="b b-fill" href="https://dikidi.net/1940967" target="_blank" rel="noopener">Записаться онлайн</a>
+          <a class="b" href="tel:+79692896141">Позвонить</a>
+        </div>
+      </div>
+      <div class="map rv">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=44.409268%2C48.626829&z=17&pt=44.409268,48.626829,pm2rdm" loading="lazy" title="Студия «Сафия» на карте Волгограда" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-t">
+      <div>
+        <div class="f-m">Сафия</div>
+        <div style="margin-top:8px">Студия красоты &middot; Волгоград, 70-летия Победы, 22, офис 1</div>
+      </div>
+      <div class="f-l">
+        <a href="tel:+79692896141">+7 969 289-61-41</a>
+        <a href="https://dikidi.net/1940967" target="_blank" rel="noopener">Онлайн-запись</a>
+        <a href="https://vk.com/club237569251" target="_blank" rel="noopener">ВКонтакте</a>
+      </div>
+    </div>
+    <div class="f-b">Демонстрационный вариант сайта. Информация об услугах и ценах не является публичной офертой.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.querySelectorAll('.tab').forEach(function(t){
+    t.addEventListener('click',function(){
+      document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on')});
+      document.querySelectorAll('.plist').forEach(function(x){x.classList.remove('on')});
+      t.classList.add('on');
+      var el=document.getElementById(t.dataset.t);
+      if(el){el.classList.add('on');el.classList.add('in')}
+    });
+  });
+
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{rootMargin:'0px 0px -50px 0px'});
+  document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+
+  if(window.innerWidth<=640){
+    document.querySelectorAll('.plist').forEach(function(list){
+      var rows=list.querySelectorAll('.ln');
+      if(rows.length<=5) return;
+      for(var i=5;i<rows.length;i++) rows[i].classList.add('hid');
+      var rest=rows.length-5;
+      var b=document.createElement('button');
+      b.type='button'; b.className='more';
+      b.textContent='Ещё '+rest+' позиции';
+      b.addEventListener('click',function(){
+        var open=list.classList.toggle('open');
+        b.textContent = open ? 'Свернуть' : 'Ещё '+rest+' позиции';
+      });
+      list.appendChild(b);
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
